@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   header {
     padding: 20px 8%;
   }
@@ -15,7 +15,8 @@
     width: 170px;
   }
 }
-@media (max-width: 990px) {
+
+@media (max-width: 980px) {
   header {
     padding: 20px 5%;
   }
@@ -28,23 +29,14 @@
   .footer {
     padding: 18px 5%;
   }
-  .logo {
-    width: 140px;
-  }
-}
-@media (max-width: 890px) {
-  header {
-    padding: 20px 5%;
-  }
-  header.sticky {
-    padding: 14px 5%;
-  }
   .home {
-    height: 90vh;
+    height: 80vh;
     background-position: center;
   }
+}
+@media (max-width: 768px) {
   .box {
-    padding: 40px 40px 46px;
+    padding: 40px 40px 40px;
   }
   .box img {
     width: 100%;
@@ -54,6 +46,30 @@
   .box h3 {
     font-size: 21px;
   }
+  #menu-icon {
+    display: block;
+  }
+  .navlist {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 255px;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--bg-color);
+    transition: all 0.5s ease;
+  }
+  .navlist a {
+    display: block;
+    padding: 17px;
+    font-size: 22px;
+  }
+  .navlist.active {
+    right: 0;
+  }
+}
+
+@media (max-width: 550px) {
   .about {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -74,43 +90,24 @@
     --p-font: 15px;
   }
 }
-@media (max-width: 720px) {
-  header {
-    padding: 20px 5%;
-  }
-  header.sticky {
-    padding: 14px 5%;
-  }
+@media (max-width: 425px) {
   :root {
     --h1-font: 3.5rem;
   }
   .social {
     margin-bottom: 20px;
   }
+ 
 }
-
-@media (max-width: 700px) {
-  #menu-icon {
-    display: block;
+@media (max-width: 375px) {
+  .main-content {
+    width: 100%;
   }
-  .navlist {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    width: 255px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: var(--bg-color);
-    transition: all 0.5s ease;
-  }
-  .navlist a{
-    display: block;
-    padding: 17px;
-    font-size: 22px;
-  }
-  .navlist.active{
-    right: 0;
+}
+@media (max-width: 320px) {
+  :root {
+    --h1-font: 3rem;
+    --h2-font: 2rem;
   }
   .about-img img {
     text-align: center;
@@ -121,36 +118,4 @@
     object-fit: cover;
     margin: 0 auto;
   }
-  /* .home {
-    height: 80vh;
-    background-position: center;
-  } */
-}
-@media (max-width: 650px){
-    .main p{
-        width: 100%;
-    }
-}
-@media (max-width: 430px){
-    :root{
-        --h1-font:3rem;
-        --h2-font:2rem;
-    }
-    .about-img img {
-        text-align: center;
-        width: 100%;
-        height: 250px;
-        max-width: 250px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 0 auto;
-      }
-      .home {
-        height: 90vh;
-        background-position: center;
-      }
-
-}
-@media (max-width: 320px){
-   
 }
